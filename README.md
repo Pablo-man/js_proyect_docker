@@ -1,18 +1,22 @@
 # Hello world whit javascript
- ![Ja´vascript](./public/img/content.png "Hello from javascript")
-
- ![](./public/img/result.png "Result event")
+## Results
+<p align="center">
+    <img src="./public/img/content.png" alt="Hello from javascript">
+</p>
+<p align="center">
+    <img src="./public/img/result.png" alt="Result event">
+</p>
 
 It is a program that manipulates the DOM and presents a typical hello world message
 
-## :open_book:How to use
+## :open_book: How to use
 * Clone the repository
 
     ```
     git clone https://github.com/Pablo-man/js_proyect_docker.git
     ```
-[!NOTE]
-Because the application is made up of statistical files, these must be served on a web server, so the VSCode code editor will be used together with the live server extension in this example.
+> [!NOTE]
+> Because the application is made up of statistical files, these must be served on a web server, so the VSCode code editor will be used together with the live server extension in this example.
 
 * Once the project has been cloned, you must open it with the VSCode code editor with the Live Server extension previously installed
 
@@ -20,7 +24,7 @@ Because the application is made up of statistical files, these must be served on
 
     ![LiveServerIconStart](./public/img/liverServer.png "Deploy page")
 
-## :rocket:How to run in docker
+## :rocket: How to run in docker
 ### Pre-requisites
 * Docker - DockerDesktop installed
 * DockerHub account
@@ -28,10 +32,16 @@ Because the application is made up of statistical files, these must be served on
 ```
 docker pull pamendeza/hellojavascript
 ```
+> [!IMPORTANT]
+> By default, the port mapping of 80 that belongs to the nginx server is placed with 8080 corresponding to the computer. If it is required to deploy it on a different port, only 8080 must be modified for another desired port.
 ### Run image
 ```
 docker run --name <NEWCONTAINERNAME> -d -p 8080:80 <IMAGENAME>
 ```
+> [!TIP]
+> The name of the downloaded image must match the one placed in the previous command, for this you can verify it using the **docker images** command. Additionally, you must check that there is no other container with the same name as the one placed in the command.
 ### View the results
 Open new window browser and search localhost:8080
+
+[View results](#results)
 
