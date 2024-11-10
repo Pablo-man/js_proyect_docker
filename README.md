@@ -45,3 +45,16 @@ Open new window browser and search localhost:8080
 
 [View results](#results)
 
+## :light_rail: PAAS Deploy with docker (Railway)
+For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
+
+![Railway Service](./public/img/railwayDeploy.png "Service")
+
+The platform automatically uses our Dockerfile to build the container. 
+
+![Build Container](./public/img/dockerFile.png "Build Configuration")
+
+> [!IMPORTANT]
+> Next, the configuration that we must add is the generation of a domain along with the desired port, in this case the indicated thing would be to point to port 80 on which nginx is working
+
+![Generate Domain](./public/img/domain.png "Domain")
