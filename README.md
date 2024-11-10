@@ -59,4 +59,4 @@ The platform automatically uses our Dockerfile to build the container.
 
 ![Generate Domain](./public/img/domain.png "Domain")
 
-[**Hello World** :trollface:](https://jsproyectdocker-production.up.railway.app "click for visit")
+[Hello World](https://jsproyectdocker-production.up.railway.app "click for visit")
