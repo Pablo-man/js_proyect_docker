@@ -36,7 +36,7 @@ It is a program that manipulates the DOM and presents a typical hello world mess
 ---
 Visit the following link to learn about the process of generating the project image and contenerization
 
-[:whale2: GO](https://hub.docker.com/repository/docker/pamendeza/js_docker_project/general, "Docker steps")
+:whale2: [GO](https://hub.docker.com/repository/docker/pamendeza/js_docker_project, "Docker steps")
 
 ## :light_rail: PAAS Deploy(Railway)
 For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
