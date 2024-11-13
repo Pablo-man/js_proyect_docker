@@ -44,6 +44,7 @@ Type of deployment was:
 ![Render Service](./public/img/type.png "Service")
 
 State:
+
 ![Render Service](./public/img/renderDeploy.png "Service")
 
 
