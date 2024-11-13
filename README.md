@@ -38,18 +38,13 @@ Visit the following link to learn about the process of generating the project im
 
 :whale2: [GO](https://hub.docker.com/repository/docker/pamendeza/js_docker_project "Docker steps")
 
-## :light_rail: PAAS Deploy(Railway)
-For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
+## :tennis: PAAS Deploy(Render) without Docker
+Type of deployment was:
 
-![Railway Service](./public/img/railwayDeploy.png "Service")
+![Render Service](./public/img/type.png "Service")
 
-The platform automatically uses our Dockerfile to build the container. 
+State:
+![Render Service](./public/img/renderDeploy.png "Service")
 
-![Build Container](./public/img/dockerFile.png "Build Configuration")
 
-> [!IMPORTANT]
-> Next, the configuration that we must add is the generation of a domain along with the desired port, in this case the indicated thing would be to point to port 80 on which nginx is working
-
-![Generate Domain](./public/img/domain.png "Domain")
-
-[Hello World](https://jsproyectdocker-production.up.railway.app "click for visit")
+:cake:[Hello World](https://js-proyect-docker.onrender.com/ "click for visit")
