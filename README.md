@@ -10,6 +10,11 @@
 It is a program that manipulates the DOM and presents a typical hello world message
 
 ## :open_book: How to use
+### Pre-requisites
+* Web browser
+* VSCode editor
+* VSCode Live Server extension
+---
 * Clone the repository
 
     ```
@@ -24,28 +29,16 @@ It is a program that manipulates the DOM and presents a typical hello world mess
 
     ![LiveServerIconStart](./public/img/liverServer.png "Deploy page")
 
-## :rocket: How to run in docker
+## :rocket: How to run with docker
 ### Pre-requisites
 * Docker - DockerDesktop installed
 * DockerHub account
-### Download image
-```
-docker pull pamendeza/hellojavascript
-```
-> [!IMPORTANT]
-> By default, the port mapping of 80 that belongs to the nginx server is placed with 8080 corresponding to the computer. If it is required to deploy it on a different port, only 8080 must be modified for another desired port.
-### Run image
-```
-docker run --name <NEWCONTAINERNAME> -d -p 8080:80 <IMAGENAME>
-```
-> [!TIP]
-> The name of the downloaded image must match the one placed in the previous command, for this you can verify it using the **docker images** command. Additionally, you must check that there is no other container with the same name as the one placed in the command.
-### View the results
-Open new window browser and search localhost:8080
+---
+Visit the following link to learn about the process of generating the project image and contenerization
 
-[View results](#results)
+[:whale2: GO](https://hub.docker.com/repository/docker/pamendeza/js_docker_project/general, "Docker steps")
 
-## :light_rail: PAAS Deploy with docker (Railway)
+## :light_rail: PAAS Deploy(Railway)
 For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
 
 ![Railway Service](./public/img/railwayDeploy.png "Service")
