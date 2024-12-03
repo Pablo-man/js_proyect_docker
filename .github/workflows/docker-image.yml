@@ -3,9 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
 jobs:
 
   build:
@@ -13,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+     - name: 'Checkout repository'
+       uses: actions/checkout@v4
+     - name: 'Build and push image'
+       uses: rtvu/build-and-push-to-docker-hub-action@v2
+       with:
+        platforms: linux/amd64
+        tags: version1,version2
+        token: ${{ secrets.TOKEN_DH }}
+        username: ${{ secrets.USER_DH }}
